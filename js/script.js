@@ -2,12 +2,16 @@
 $(document).ready(function () {
 
     // toggle menu/navbar script
+    document.querySelector(".menu-btn").onclick = () => {
+    document.querySelector(".navbar .menu").classList.toggle("active");
+      };
+    
     $('.menu-btn').click(function () {
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
 
-
+    
 
 
 
